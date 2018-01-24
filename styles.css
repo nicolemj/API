@@ -1,0 +1,58 @@
+body {
+    background: url(http://onename-blog.s3.amazonaws.com/2015/Jun/evolution_of_the_internet_from_decentralized_to_centralized-1435258457348.jpg)
+    center center fixed;
+}
+
+
+/* Nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color:#f3f3f3 ;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+
+}
+
+/* Table */
+.col {
+    margin-left: 10%;
+    width: 80%;
+    background-color: black ;
+    margin-top: 5%;
+
+}
+
+#data {
+    margin-left: -35%;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#style {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
