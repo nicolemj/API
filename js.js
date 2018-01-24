@@ -11,9 +11,7 @@ $(() => {
         let btc = res.BTC.USD
         let ltc = res.LTC.USD
         let xrp = res.XRP.USD
-
         let zrx = res.ZRX.USD  
-        let tnt = res.TNT.USD 
         let gvt = res.GVT.USD 
         let ppt = res.PPT.USD   
 
@@ -27,9 +25,6 @@ $(() => {
         $('#xrpContainer').append(xrpContainer)
         let zrxContainer=(`<td>${zrx}</td>`)
         $('#zrxContainer').append(zrxContainer)
-        let tntContainer=(`<td>${tnt}</td>`)
-        $('#tntContainer').append(tntContainer)
-
         let gvtContainer=(`<td>${gvt}</td>`)  
         $('#gvtContainer').append(gvtContainer)
         let pptContainer=(`<td>${ppt}</td>`)
@@ -41,3 +36,5 @@ $(() => {
     })
 
 
+ 
+   

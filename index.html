@@ -12,9 +12,8 @@
   
  <!-- Nav bar -->
  <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="https://www.gdax.com/"target="_blank">GDAX</a></li>
+  <li><a href="https://www.kraken.com/"target="_blank">Kraken</a></li>
   <li><a href="#about">About</a></li>
 </ul>
  <!-- Table -->
@@ -25,6 +24,7 @@
       <th scope="col"><button type="button" id='coinInfo'>Coin Info</button></th>
       <th scope="col">Name</th>
       <th scope="col">Price</th>
+      <th scope="col">Chart</th>
     </tr>
   </thead>
   <tbody>
@@ -32,31 +32,123 @@
       <td></td>
       <td  class='price'>BTC</td>
       <td id='btcContainer'></td>
+      <td class='chart'>
+<!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 400,
+  "height": 200,
+  "symbol": "COINBASE:BTCUSD",
+  "interval": "240",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "2",
+  "locale": "en",
+  "toolbar_bg": "rgba(238, 238, 238, 1)",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "save_image": false,
+  "calendar": true,
+  "hideideas": true
+});
+</script>
+<!-- TradingView Widget END -->
+</td>
+    
     </tr>
     <tr>
   <td></td>
   <td class='price'>LTC</td>
   <td id='ltcContainer'></td>
+  <td class='chart'>
+    <!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 400,
+  "height": 200,
+  "symbol": "COINBASE:LTCUSD",
+  "interval": "240",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "2",
+  "locale": "en",
+  "toolbar_bg": "rgba(238, 238, 238, 1)",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "save_image": false,
+  "calendar": true,
+  "hideideas": true
+});
+</script>
+<!-- TradingView Widget END --> 
+</td>
       </tr>
       <tr>
     <td></td>
     <td  class='price'>Ripple</td>
     <td id='xrpContainer'></td>
+    <td class='chart'>
+ <!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 400,
+  "height": 200,
+  "symbol": "KRAKEN:XRPUSD",
+  "interval": "240",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "2",
+  "locale": "en",
+  "toolbar_bg": "rgba(238, 238, 238, 1)",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "save_image": false,
+  "calendar": true,
+  "hideideas": true
+});
+</script>
+<!-- TradingView Widget END -->
+        </td>
       </tr>
     <tr>
     <td></td>
     <td  class='price'>Project 0x</td>
     <td id='zrxContainer'></td>
-    </tr>
-    <tr>
-<td></td>
-<td class='price'>Tierion</td>
-<td id='tntContainer'></td>
+    <td class='chart'> 
+  <!-- TradingView Widget BEGIN -->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "width": 400,
+  "height": 200,
+  "symbol": "BITFINEX:ZRXUSD",
+  "interval": "240",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "2",
+  "locale": "en",
+  "toolbar_bg": "rgba(238, 238, 238, 1)",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "save_image": false,
+  "calendar": true,
+  "hideideas": true
+});
+</script>
+<!-- TradingView Widget END -->
+      
+    </td>
     </tr>
     <tr>
     <td></td>
     <td  class='price'>Genesis Vision</td>
     <td id='gvtContainer'></td>
+    <td class='chart'> 
+        
+    </td>
     </tr>
     <tr>
     <td></td>
