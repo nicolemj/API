@@ -1,7 +1,7 @@
 $(() => {
 
 
-    $('#coinInfo').click(() => {  
+    $('#button1').click(() => {  
         $.ajax({
             method: 'GET',
             url: "https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP,ZRX,TNT,GVT,PPT,LTC&tsyms=USD"
@@ -12,6 +12,7 @@ $(() => {
         let ltc = res.LTC.USD
         let xrp = res.XRP.USD
         let zrx = res.ZRX.USD  
+
         let gvt = res.GVT.USD 
         let ppt = res.PPT.USD   
 
@@ -33,6 +34,13 @@ $(() => {
 
         })
 
+        
+$(document).ready(function(){
+    $("#button1").click(function(){
+      $('#style').toggle();
+    });
+});
+       
     })
 
 
